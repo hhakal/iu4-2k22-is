@@ -34,7 +34,7 @@ match:
 	jz match					;if (r8b==r9b) goto match
 	
 step_back:
-	sub r10, 1
+	mov r10, rdx
 	jmp loop
 exit:
 	pop rbx

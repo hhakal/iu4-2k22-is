@@ -14,9 +14,9 @@ loop:
 	sub rbx, rcx			;rbx=rbc-rcx
 	sub rbx, 1				;rbx-=1
 	cmp rbx, rdx
-	jge max_len
+	jae max_len
 	
-	jl exit
+	jmp exit
 	
 max_len:
 	mov rbx, rdx
